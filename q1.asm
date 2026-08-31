@@ -8,19 +8,19 @@ INCLUDE Irvine32.inc
 
 .code
 main PROC
-    ; Read first integer
+   
     mov edx, OFFSET prompt1
     call WriteString
     call ReadInt
     mov var1, eax
 
-    ; Read second integer
+   
     mov edx, OFFSET prompt2
     call WriteString
     call ReadInt
     mov var2, eax
 
-    ; Swap values using EAX and EBX registers
+    
     mov eax, var1
     mov ebx, var2
     mov var1, ebx
